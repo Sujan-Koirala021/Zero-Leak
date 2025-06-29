@@ -35,7 +35,7 @@ const Navbar = ({ showMoreDetails = false }: { showMoreDetails: boolean }) => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Link href='/screen'>
+          <Link href='/explore'>
             <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium text-md transition-colors shadow-sm">
               Get Started
             </button>
@@ -56,9 +56,9 @@ const Navbar = ({ showMoreDetails = false }: { showMoreDetails: boolean }) => {
             </>
           )}
           <Link href='/faq' className="text-lg font-medium p-3 hover:bg-red-50 rounded-lg text-gray-700 hover:text-red-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
-          <Link href='/screen' className="text-lg font-medium p-3 hover:bg-red-50 rounded-lg text-gray-700 hover:text-red-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Screen</Link>
+          <Link href='/explore' className="text-lg font-medium p-3 hover:bg-red-50 rounded-lg text-gray-700 hover:text-red-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Explore</Link>
           <div className="flex flex-col gap-3 mt-4">
-            <Link href='/screen'>
+            <Link href='/explore'>
               <button className="w-full justify-center bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md font-medium transition-colors shadow-sm">
                 Get Started
               </button>

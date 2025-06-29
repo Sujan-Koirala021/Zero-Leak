@@ -1,4 +1,4 @@
-# ZeroLeaks
+# 🚨 ZeroLeaks
 
 **ZeroLeaks** is a security-focused tool designed to scan public GitHub repositories for exposed API keys and other critical vulnerabilities. Simply provide a GitHub URL, and ZeroLeaks will locate and report any sensitive information leaks—helping you secure your code before attackers can exploit it.
 
@@ -12,7 +12,8 @@ While casually scrolling through social media, we stumbled upon a video showcasi
 
 ## 🎥 Demo
 
-> _Coming Soon!_
+[![Watch the video](https://img.youtube.com/vi/H7HYKFfn1wU/0.jpg)](https://youtu.be/H7HYKFfn1wU)
+
 
 ---
 
