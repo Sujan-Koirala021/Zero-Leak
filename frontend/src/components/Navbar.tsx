@@ -30,7 +30,7 @@ const Navbar = ({ showMoreDetails = false }: { showMoreDetails: boolean }) => {
               <a href="#how-it-works" className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">How It Works</a>
             </>
           )}
-          <Link href='/explore_kb' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Explore</Link>
+          <Link href='/explore' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Explore</Link>
           <Link href='/chat_agent' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Chat Now</Link>
         </nav>
 
