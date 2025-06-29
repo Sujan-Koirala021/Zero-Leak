@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useCoAgent } from "@copilotkit/react-core";
 import { MessageRole, TextMessage } from "@copilotkit/runtime-client-gql";
-import ReactMarkdown from 'react-markdown';
 import { Card } from "../../components/ui/card";
 import { Textarea } from "../../components/ui/textarea";
 import { Button } from "../../components/ui/button";
@@ -17,12 +16,6 @@ interface ScanReport {
     markdownReport: string;
 }
 
-// Interface for repository suggestions
-interface Suggestion {
-    label: string;
-    url: string;
-    icon: string;
-}
 
 // Interface for scan statistics
 interface ScanStats {
@@ -31,14 +24,6 @@ interface ScanStats {
     ranges: number;
 }
 
-// Props for the category card component
-interface CategoryCardProps {
-    icon: string;
-    title: string;
-    url: string;
-    handleScan: (url: string) => void;
-    className?: string;
-}
 
 // Type definition for the application's context
 interface ZeroLeakContextType {
@@ -73,21 +58,6 @@ const useZeroLeakContext = (): ZeroLeakContextType => {
     };
 };
 
-// A simple card component for displaying repository suggestions
-const CategoryCard: React.FC<CategoryCardProps> = ({ icon, title, url, handleScan, className }) => (
-    <Card
-        className={`p-4 cursor-pointer transition-all duration-200 hover:shadow-lg ${className}`}
-        onClick={() => handleScan(url)}
-    >
-        <div className="flex items-center space-x-3">
-            <span className="text-2xl">{icon}</span>
-            <div>
-                <h4 className="font-semibold text-gray-800">{title}</h4>
-                <p className="text-xs text-red-600 mt-1 font-mono">{url}</p>
-            </div>
-        </div>
-    </Card>
-);
 
 // Main component for the Zero-Leak Agent UI
 const ZeroLeakAgent: React.FC = () => {

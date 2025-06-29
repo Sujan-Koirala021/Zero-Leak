@@ -56,7 +56,7 @@ const Features = () => {
                 icon={feature.icon}
                 title={feature.title}
                 description={feature.description}
-                delay={index * 100}
+                // delay={index * 100}
                 className="animate-slide-up h-full"
               />
             </div>
