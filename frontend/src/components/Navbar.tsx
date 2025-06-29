@@ -31,7 +31,7 @@ const Navbar = ({ showMoreDetails = false }: { showMoreDetails: boolean }) => {
             </>
           )}
           <Link href='/explore' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Explore</Link>
-          <Link href='/chat_agent' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Chat Now</Link>
+          {/* <Link href='/chat_agent' className="text-md font-medium text-gray-700 hover:text-red-600 transition-colors">Chat Now</Link> */}
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">

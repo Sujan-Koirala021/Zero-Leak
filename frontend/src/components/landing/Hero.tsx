@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 const HeroSection = () => {
@@ -26,16 +24,16 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href='/discover'>
+              <Link href='/explore'>
                 <button className=' px-8 py-4 bg-red-600 hover:bg-red-700 text-white shadow-lg hover:shadow-red-500/30 rounded-lg text-lg font-bold'>
                   Start Scanning 
                 </button>
               </Link>
-              <button className="text-lg px-8 py-4 border border-red-200 text-red-600 hover:bg-red-200 rounded-lg font-bold">
+              {/* <button className="text-lg px-8 py-4 border border-red-200 text-red-600 hover:bg-red-200 rounded-lg font-bold">
                 <span className='flex justify-center items-center'>
                   Talk with Zero Leak <ChevronRight className="ml-2 h-5 w-5" />
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
 
