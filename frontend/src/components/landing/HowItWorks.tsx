@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 function HowItWorks() {
     return (
@@ -12,7 +13,6 @@ function HowItWorks() {
                         Start protecting your codebase from leaked secrets today.
                     </p>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
                         {
@@ -43,7 +43,7 @@ function HowItWorks() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <Link to='/discover'>
+                    <Link href='/discover'>
                         <button className='px-8 py-4 bg-red-600 hover:bg-red-700 text-white shadow-lg hover:shadow-red-500/30 rounded-lg text-lg'>
                             Start Scanning
                         </button>

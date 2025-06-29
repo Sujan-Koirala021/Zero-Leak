@@ -1,6 +1,14 @@
 import React from 'react';
 
-const FeatureCard = ({ 
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+  className?: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ 
   icon, 
   title, 
   description, 

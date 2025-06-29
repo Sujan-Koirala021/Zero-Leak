@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -25,7 +26,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to='/discover'>
+              <Link href='/discover'>
                 <button className=' px-8 py-4 bg-red-600 hover:bg-red-700 text-white shadow-lg hover:shadow-red-500/30 rounded-lg text-lg font-bold'>
                   Start Scanning 
                 </button>
